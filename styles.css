@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.calculator {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+}
+
+button {
+  font-size: 1.75rem;
+  border: 1px solid rgb(101, 101, 101);
+}
+
+button:hover {
+  border: 2px solid black;
+}
+
+.number, .decimal {
+  background-color: rgb(133, 190, 215);
+}
+.operator {
+  background-color: rgb(226, 145, 98);
+}
+
+.span-two {
+  grid-column: span 2;
+}
+
+.display {
+  grid-column: 1 / -1;
+  background-color: rgb(35, 35, 35);
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  align-items: flex-end;
+  justify-content: space-around;
+}
+
+.current {
+  font-size: 2rem;
+  color: rgba(255, 255, 255, .9)
+}
+
+.previous {
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, .7);
+}
