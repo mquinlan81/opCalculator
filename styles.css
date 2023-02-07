@@ -29,7 +29,7 @@ button:hover {
 .number, .decimal {
   background-color: rgb(133, 190, 215);
 }
-.operator {
+.operator, .equals {
   background-color: rgb(226, 145, 98);
 }
 
